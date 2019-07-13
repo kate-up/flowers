@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>页头</title>
+    <style>
+        *{padding:0;margin:0;}
+       #top_bar{
+           width:100%;height:45px;
+           background:#e0e0e0;
+           line-height: 45px;
+           color:#757575;
+           display: flex;
+           justify-content: space-around;
+       }
+       #top_bar .left_font{
+           width:400px;height:45px;
+           font-size:12px;
+           margin-left:50px;
+       } 
+       #top_bar .left_font>span:last-child{margin-left:30px;}
+       #top_bar .right_img{
+           width:140px;height:45px;
+           line-height: 55px;
+           display: flex;
+           justify-content: space-around;
+       }
+       #top_bar .right_img img{width:20px;height:20px;}
+       #logo{
+           width:635px;height:90px;
+           padding:15px 0;
+           margin:0 auto;
+           text-align: center;
+       }
+       #nav{
+           width:1004px;height:41px;
+           margin:0 auto;
+           line-height: 41px;
+           display: flex;
+           justify-content: space-around; 
+       }
+       #nav>a{
+            text-decoration: none;
+            color:#757575;
+            font-size: 15px ;
+       }
+    </style>
+</head>
+<body>
+   <div id="container">
+       <!-- 顶部欢迎语和导航栏 -->
+       <div id="top_bar">
+            <div class="left_font">
+                <span>在线时间 08：30~21：00</span>
+                <span>欢迎访问花语在线商城！</span>
+            </div>
+            <div class="right_img">
+                <a href="#"><img src="img/fangdajing.png" ></a>
+                <a href="#"><img src="img/ren.png" ></a>
+                <a href="#"><img src="img/gouwuche.png" ></a>
+            </div>
+       </div>
+       <!-- logo -->
+       <div id="logo">
+           <img src="img/logo.png">
+       </div>
+       <!-- 导航条 -->
+       <div id="nav">
+            <a href="#"><span>商城首页</span></a>
+            <a href="#"><span>所有商品</span></a>
+            <a href="#"><span>支付方式</span></a>
+            <a href="#"><span>关于花语</span></a>
+            <a href="#"><span>线下花店</span></a>
+       </div>
+   </div> 
+</body>
+</html>
