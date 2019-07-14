@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#top{
+			border:1px dashed #ddd;
+		}
+		#top ul{
+			list-style:none;
+			display:flex;
+			color:#595959;
+			margin-left:400px;
+		}
+		#top ul li:nth-child(2):before,#top ul li:nth-child(3):before,#top ul li:last-child:before{
+		margin-left:10px;
+			content: "/";
+		}
+		#center{
+			width:1084px;
+			height:1873.94px;
+			display:flex;
+			flex-wrap:wrap;
+			margin:0 auto;
+		}
+		#left{
+			width:737.27px;
+			height:1823.94px;
+			display:flex;
+			flex-wrap:wrap;
+			margin-left:20px;
+		}
+		#left p:first-child{
+			font-size:20px;
+		}
+		#left p:nth-child(2){
+			font-size:32px;
+		}
+		#left p:nth-child(4){
+			width:400px;
+			font-size:14px;
+		}
+		#pic{
+			width:278.91px;
+			height:376px;
+		}
+		#md{
+			width:250px;
+			height:250px;
+			border:1px solid #dddddd;
+		}
+		#sm img{
+			height:60px;
+			width:60px;
+		}
+		#sm{
+			width:178.91px;
+			height:64px;
+		}
+		#text{
+			width:418.36px;
+			height:376.5px;
+		}
+		#text input:nth-child(5),#text input:last-child{
+			width:30px;
+			height:40px;
+			background:#dddddd;
+			padding:1px 6px;
+		}
+		#text input:nth-child(6){
+			width:140px;
+			height:40px;
+			background:#333333;
+			padding:1px 6px;
+			color:#fff;
+			border:none;
+		}
+		#text input:nth-child(7){
+			width:52px;
+			height:35px;
+		}
+		#comment_list{
+			width:697.27px;
+			height:133px;
+			margin-top:-760px;
+		}
+		#comment_list p{
+			border-top:1px solid #dddddd;
+		}
+		#right{
+			width:292.27px;
+			height:1527px;
+		}
+		#title{
+		width:240px;
+		height:45px;
+		background:#000;
+		font-size:15px;
+		text-align:center;
+		line-height:45px;
+		color:#fff;
+		}
+		#right p:nth-child(2){
+		width:240px;
+		height:40px;
+			font-size:13px;
+			padding:0 0 0 12px
+		}
+		#right p:nth-child(3),#right p:nth-child(4),
+		#right p:nth-child(5),#right p:nth-child(6){
+			width:240px;
+			height:40px;
+			font-size:13px;
+			padding:0 0 0 12px;
+		}
+		#right p:nth-child(7){
+			width:192.67PX;
+			height:17px;
+			font-size:13px;
+			padding:0 0 0 12px;
+		}
+		#about{
+			width:192.67px;
+			height:742px;
+		}
+		#about ul{
+		width:240px;
+		list-style:none;
+		}
+		#about ul li{
+			width:48%;
+			height:121px;
+			display:inline-block;
+		}
+		#hot{
+			width:192.67px;
+			height:460px;
+			margin-top:160px;
+		}
+		#hot ul{
+		width:240px;
+		list-style:none;
+		}
+		#hot ul li{
+			width:48%;
+			height:121px;
+			display:inline-block;
+		}
+		#hot p:first-child{
+			font-size:13px;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<div id="top">
+		<ul>
+			<li>首页</li>
+			<li>所有商品</li>
+			<li>植物花艺002</li>
+		</ul>
+	</div>
+	<div id="center">
+		<div id="left">
+			<div id="pic">
+				<div id="md"><img src="plant1.jpg" alt=""></div>
+				<div id="sm"><img src="plant1.jpg" alt=""></div>
+			</div>
+			<div id="text">
+				<p>植物花艺002</p>
+				<p>￥450</p>
+				<p>花语：植物花艺2</p>
+				<p>生长习性：喜阳光、温暖、耐旱,怕寒冷、怕涝、怕酸性土壤,适合在中性、微碱性土壤生长,充足但适度的日照可以使植物变得健壮，株型更紧凑，颜色更鲜艳，状态更健康，且不易被真菌感染，染上虫害的可能性也会更小。</p>
+				<input type="button" value="-">
+				<input type="button" value="加入购物车">
+				<input type="text" value="1">
+				<input type="button" value="+">
+			</div>
+			<div id="comment_list">
+				<p>用户评论(0)</p>
+				<p>目前还未有评论</p>
+				<p>只有购买此商品的客户登录后才能发表评论</p>
+			</div>	
+			<img src="planting.jpg" alt="">
+		</div>
+		<div id="right">
+			<p id="title">金牌店铺，值得信赖</p>
+			<p>花语 HUAYU</p>
+			<p>信誉：*******</p>
+			<p>服务：5.0</p>
+			<p>描述：5.0</p>
+			<p>物流：4.9</p>
+			<p>相关商品 ABOUT SALE</p>
+			<div id="about">
+				<ul>
+					<li>
+						<a href=""><img src="plant2.jpg" alt=""></a>
+						<p>植物花艺001</p>
+						<p>￥500</p>
+					</li>
+					<li>
+						<a href=""><img src="plant2.jpg" alt=""></a>
+						<p>植物花艺001</p>
+						<p>￥500</p>
+					</li>
+					<li>
+						<a href=""><img src="plant2.jpg" alt=""></a>
+						<p>植物花艺001</p>
+						<p>￥500</p>
+					</li>
+					<li>
+						<a href=""><img src="plant2.jpg" alt=""></a>
+						<p>植物花艺001</p>
+						<p>￥500</p>
+					</li>
+					<li>
+						<a href=""><img src="plant2.jpg" alt=""></a>
+						<p>植物花艺001</p>
+						<p>￥500</p>
+					</li>
+					<li>
+						<a href=""><img src="plant2.jpg" alt=""></a>
+						<p>植物花艺001</p>
+						<p>￥500</p>
+					</li>
+					<li>
+						<a href=""><img src="plant2.jpg" alt=""></a>
+						<p>植物花艺001</p>
+						<p>￥500</p>
+					</li>
+					<li>
+						<a href=""><img src="plant2.jpg" alt=""></a>
+						<p>植物花艺001</p>
+						<p>￥500</p>
+					</li>
+					<li>
+						<a href=""><img src="plant2.jpg" alt=""></a>
+						<p>植物花艺001</p>
+						<p>￥500</p>
+					</li>
+					<li>
+						<a href=""><img src="plant2.jpg" alt=""></a>
+						<p>植物花艺001</p>
+						<p>￥500</p>
+					</li>
+				</ul>
+				</div>
+				<div id="hot">
+					<p>热卖商品 HOT SALE</p>
+					<ul>
+						<li><a href=""><img src="hongmeigui.jpg" alt=""></a>
+						<p>红玫瑰</p>
+						<p>￥600</p></li>
+						<li><a href=""><img src="hongmeigui.jpg" alt=""></a>
+						<p>红玫瑰</p>
+						<p>￥600</p></li>
+						<li><a href=""><img src="hongmeigui.jpg" alt=""></a>
+						<p>红玫瑰</p>
+						<p>￥600</p></li>
+						<li><a href=""><img src="hongmeigui.jpg" alt=""></a>
+						<p>红玫瑰</p>
+						<p>￥600</p></li>
+						<li><a href=""><img src="hongmeigui.jpg" alt=""></a>
+						<p>红玫瑰</p>
+						<p>￥600</p></li>
+					</ul>	
+				</div>	
+		</div>
+	</div>
+</body>
+</html>
