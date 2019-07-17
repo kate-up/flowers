@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>mainpage</title>
     <style>
+        * { margin: 0; padding: 0; }
         .content {width: 100% }
         #carous {
             text-align: center;
@@ -72,8 +73,11 @@
              justify-content: space-around;
              margin: 80px 8px;
          }
-         .new_style { border: 2px solid #aaa }
-         .new_style p { text-align: center }
+         .new_style { 
+             border: 2px solid #aaa ; 
+             overflow: hidden; }
+         .new_style p { text-align: center 
+        }
          #sales_pro {
              width: 99%;
              margin-top: 80px;
@@ -84,8 +88,23 @@
          #sales_pro div img { width: 100%; }
          #sales_pro div p { font-size: 60px; }
          #left { width: 100% }
-         #right { width: 100%; text-align: center; margin: 30px 50px;}
-         #right div { width: 80%; margin: 50px 200px}
+         #right { width: 100%; text-align: center; margin: 30px 0px;}
+         #right div { width: 90%; margin: 50px 80px}
+         #right div span { 
+            vertical-align: middle; 
+            display: inline-block; 
+            font-size: 40px; 
+            font-style: italic; 
+            color: #25A05E 
+        }
+        #right div span img {
+            width: 100px; 
+            vertical-align: middle;
+            
+        }
+         #right div p { font-size: 20px; }
+        .top {  margin-bottom: 100px ; margin-top: 30px; }
+        .bottom { margin: 30px ; }
     </style>
 </head>
 <body>
@@ -170,14 +189,15 @@
             </div>
             <div id="right">
                 <div >
-                    <span style="vertical-align: middle; display: inline-block; font-size: 80px; font-style: italic; color: #25A05E">
-                        <img style="width: 250px; vertical-align: middle" src="images/logo.png" alt="">
+                    <span>
+                        <img src="images/logo.png" alt="">
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp花语，藏不住的情愫~
                     </span>
                 </div> 
                 <div>
                     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp花语，一家全国连锁店，主要以花艺为主，品种齐全，价格合理，提供24小时网上订购鲜花礼品服务。16年用心经营，专业成就花店知名品牌，打造市场一流花店。</p>
-                    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们的宗旨：顾客满意才是我们的追求，不断努力力争做您满意的花后。</p>
+                    <br>
+                    <p>我们的宗旨：顾客满意才是我们的追求，不断努力力争做您满意的花后。</p>
                 </div>       
             </div>
         </div>
@@ -195,7 +215,7 @@
         <div id="new_list">
             <div class="new_style">
                 <div class="top">
-                    <a href="">
+                    <a href="#">
                         <img src="images/plant5.jpg" alt="">
                     </a>
                 </div>
@@ -210,14 +230,14 @@
                             <p>￥450</p>
                         </div>
                 <div class="bottom">
-                    <a href="">
+                    <a href="#">
                         <img src="images/plant6.jpg" alt="">
                     </a>
                 </div>
             </div>
             <div class="new_style">
                 <div class="top">
-                    <a href="">
+                    <a href="#">
                         <img src="images/plant7.jpg" alt="">
                     </a>
                 </div>
@@ -232,14 +252,59 @@
                     <p>￥450</p>
                 </div>
                 <div class="bottom">
-                    <a href="">
+                    <a href="#">
                         <img src="images/plant3.jpg" alt="">
                     </a>
                 </div>
             </div>
         </div>
+        <div> <!-- 最外层div -->
+            <div> <!-- left  -->
+                <div> <!-- 第一行图片与文字  -->
+                    <div>
+                        <a href="">
+                            <img src="images/decorate3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <p><a href="">山中花店的活动中 稀有种子如何获得？</a></p>
+                        <p>发布日期：2017-05-23</p>
+                        <p>从一九四七年巴黎蒙田大街30号New Look的展出开始，Dior就成为高级女装的代名词, 继承了法国高级女装的传统，始终保持华丽的设计路线，做工精细，迎合上流社会成熟女性的审...</p>
+                    </div>
+                </div>
+                <div>  <!-- 第二行图片与文字  -->
+                    <div>
+                        <a href="">
+                            <img src="images/decorate4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <p><a href="">山中花店的活动中 稀有种子如何获得？</a></p>
+                        <p>发布日期：2017-05-23</p>
+                        <p>从一九四七年巴黎蒙田大街30号New Look的展出开始，Dior就成为高级女装的代名词, 继承了法国高级女装的传统，始终保持华丽的设计路线，做工精细，迎合上流社会成熟女性的审...</p>
+                    </div>
+                </div>
+            </div>
+            <div>  <!-- right  -->
+                <img src="images/decorate2.jpg" alt="">
+            </div>
+        </div>
     </div>
     <!-- 7 售后服务 -->
+    <div id="aftersale">
+        <div>
+            <img src="images/serive1.png" alt="">
+        </div>
+        <div>
+            <img src="images/serive2.png" alt="">
+        </div>
+        <div>
+            <img src="images/serive3.png" alt="">
+        </div>
+        <div>
+            <img src="images/serive4.png" alt="">
+        </div>
+    </div>
 </div>
 </body>
 </html>
