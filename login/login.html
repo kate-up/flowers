@@ -26,7 +26,7 @@
             margin:20px;
             text-align: center;
         }
-        
+        input{outline: 0}
         .login div:first-child{
             height:70px;
             font:24px Arial;
@@ -35,12 +35,26 @@
             text-align: center;
             margin-bottom:30px;
         }
-        .text>input,.upwd>input,.btn>input{
-            width:80%;height:45px;
-            margin:10px 0; 
-            padding:0 10px;
+        .phone>input,.upwd>input{
+            background-image: url(../img/pho.png);
+            background-repeat: no-repeat;
+            background-size: 35px;
+            background-position: -3px 6px;
         }
+        .upwd>input{ 
+            background-image: url(../img/mima.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: 1px 8px;
+        }
+        .phone>input,.upwd>input{
+            width:70%;height:45px;
+            margin:10px 0; 
+            padding-left: 35px;
+        }
+    
         .btn>input{
+            width:80%;height:45px;
             margin-top:30px;
         }
         .login>div:nth-child(4){
@@ -71,7 +85,7 @@
         <div>
             <p>会员登录</p>
         </div> 
-        <div class="text">
+        <div class="phone">
             <input type="text" placeholder="请输入手机号登录">
         </div>
         <div class="upwd">
