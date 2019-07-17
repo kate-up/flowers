@@ -8,20 +8,84 @@
     <style>
         .content {width: 100% }
         #carous {
-            width: 100px;
+            text-align: center;
+            width: 100%;
+        }
+        #carous img {
+            width: 100%;
+            height: 100%; 
         }
         /* 先隐藏一张轮播图片 */
-        .two {
+        .one {
             display: none;
         }
         #bigPic {
-            display: block;
-            margin-top: 50px;
+            margin-top: 200px;
+            display: flex;             /* 弹性布局   */
+            justify-content: space-around;  /* 每个间距大小相同 */
         }
         #bigPic img {
-            display: inline-block;
-            width: 49%;
+            border: 1px solid #aaa;
         }
+        .leftpic {
+            margin-left: 100px;
+        }
+        .rightpic {
+            margin-right: 100px;
+        }
+        #new {
+            margin-top: 200px;
+        }
+        #todaysale { margin-top: 200px; }
+        .title { 
+            margin: 10px 80px;
+            display: flex; 
+            justify-content: space-between;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            display: inline-block;
+            width: 200px;
+            height: 60px;;
+        }
+        a:hover { 
+            background: #777;
+            color: #fff;
+            border-radius: 8px;
+         }
+         .titlestyle {
+             font-size: 80px;
+             font-weight: bolder; /*加粗*/
+         }
+         .smtitle {
+             font-size: 30px;      /* 字体大小 */
+             font-style: italic;  /* 斜体 */
+         }
+         .astyle {
+             text-align: center;
+             font-size: 40px;
+             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         }
+         #new_list {
+             display: flex;
+             justify-content: space-around;
+             margin: 80px 8px;
+         }
+         .new_style { border: 2px solid #aaa }
+         .new_style p { text-align: center }
+         #sales_pro {
+             width: 99%;
+             margin-top: 80px;
+             display: flex;
+             justify-content: space-around;
+         }
+         #sales_pro div { width: 49%; text-align: center; }
+         #sales_pro div img { width: 100%; }
+         #sales_pro div p { font-size: 60px; }
+         #left { width: 100% }
+         #right { width: 100%; text-align: center; margin: 30px 50px;}
+         #right div { width: 80%; margin: 50px 200px}
     </style>
 </head>
 <body>
@@ -33,18 +97,148 @@
     </div>
     <!-- 2 两张大图 -->
     <div id="bigPic">
-        <div style="left: 0">
-                <img src="./images/bigPic2.jpg" alt="">
-        </div>
-        <div style="right: 0;">
-                <img src="./images/bigPic2.jpg" alt="">
-        </div>
-        
+        <img class="leftpic" src="./images/bigPic2.jpg" alt="">
+        <img class="rightpic" src="./images/bigPic2.jpg" alt="">
     </div>
     <!-- 3 今日上新 -->
+    <div id="new">
+        <div class="title">
+            <div>
+                <span class="titlestyle"> 今日上新</span>
+                <span class="smtitle">new product</span>
+            </div>
+            <div class="astyle"><a href="#">+查看更多</a></div>
+        </div>
+        <hr>
+        <div id="new_list">
+            <div class="new_style">
+                <img src="./images/plant1.jpg" alt="">
+                <p>植物花艺002</p>
+                <p>￥450</p>
+            </div>
+            <div class="new_style">
+                <img src="./images/plant2.jpg" alt="">
+                <p>植物花艺004</p>
+                <p>￥350</p>
+            </div>
+            <div class="new_style">
+                <img src="./images/plant3.jpg" alt="">
+                <p>植物花艺005</p>
+                <p>￥370</p>
+            </div>
+            <div class="new_style">
+                <img src="./images/plant4.jpg" alt="">
+                <p>植物花艺008</p>
+                <p>￥420</p>
+            </div>
+        </div>
+    </div>
     <!-- 4 临时促销 -->
+    <div id="todaysale">
+        <div class="title">
+            <div>
+                <span class="titlestyle"> 限时特价</span>
+                <span class="smtitle">new product</span>
+            </div>
+            <div class="astyle"><a href="#">+查看更多</a></div>
+        </div>
+        <hr>
+        <div id="sales_pro">
+            <div>
+                <img src="images/sales1.jpg" alt="">
+                <p>特价￥100</p>
+            </div>
+            <div>
+                <p>特价￥100</p>
+                <img src="images/sales2.jpg" alt="">
+            </div>
+        </div>
+    </div>
     <!-- 5 店铺介绍 -->
+    <div id="todaysale">
+        <div class="title">
+            <div>
+                <span class="titlestyle"> 店铺介绍</span>
+                <span class="smtitle">Shop introduction</span>
+            </div>
+            <div class="astyle"><a href="#">关于花语</a></div>
+        </div>
+        <hr>
+        <div id="sales_pro">
+            <div id="left">
+                <img src="images/banner3.jpg" alt="">
+            </div>
+            <div id="right">
+                <div >
+                    <span style="vertical-align: middle; display: inline-block; font-size: 80px; font-style: italic; color: #25A05E">
+                        <img style="width: 250px; vertical-align: middle" src="images/logo.png" alt="">
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp花语，藏不住的情愫~
+                    </span>
+                </div> 
+                <div>
+                    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp花语，一家全国连锁店，主要以花艺为主，品种齐全，价格合理，提供24小时网上订购鲜花礼品服务。16年用心经营，专业成就花店知名品牌，打造市场一流花店。</p>
+                    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们的宗旨：顾客满意才是我们的追求，不断努力力争做您满意的花后。</p>
+                </div>       
+            </div>
+        </div>
+    </div>
     <!-- 6 装点家园 -->
+    <div id="new">
+        <div class="title">
+            <div>
+                <span class="titlestyle"> 装点家园</span>
+                <span class="smtitle">Decorate Home</span>
+            </div>
+            <div class="astyle"><a href="#">+查看更多</a></div>
+        </div>
+        <hr>
+        <div id="new_list">
+            <div class="new_style">
+                <div class="top">
+                    <a href="">
+                        <img src="images/plant5.jpg" alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p>植物花艺002</p>
+                    <p>￥450</p>
+                </div>
+            </div>
+            <div class="new_style">
+                    <div class="top">
+                            <p>植物花艺002</p>
+                            <p>￥450</p>
+                        </div>
+                <div class="bottom">
+                    <a href="">
+                        <img src="images/plant6.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="new_style">
+                <div class="top">
+                    <a href="">
+                        <img src="images/plant7.jpg" alt="">
+                    </a>
+                </div>
+                <div class="bottom">
+                    <p>植物花艺002</p>
+                    <p>￥450</p>
+                </div>
+                </div>
+            <div class="new_style">
+                <div class="top">
+                    <p>植物花艺002</p>
+                    <p>￥450</p>
+                </div>
+                <div class="bottom">
+                    <a href="">
+                        <img src="images/plant3.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- 7 售后服务 -->
 </div>
 </body>
