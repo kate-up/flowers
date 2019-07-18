@@ -105,6 +105,31 @@
          #right div p { font-size: 20px; }
         .top {  margin-bottom: 100px ; margin-top: 30px; }
         .bottom { margin: 30px ; }
+        #dec { 
+            width: 100%; 
+            display: flex;  
+            margin: 50px 30px;
+        }
+        /* #dec_left { display: flex;  } */
+        #dec_right { width: 40% ; margin-right: 0;}
+        .atleft {
+            display: flex;
+            border: 1px solid #aaa;
+            padding: 10px;
+            margin: 10px;
+        }
+        .imgs {
+            width: 50%;
+        }
+        #aftersale {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin: 100px 0;
+        }
+        #aftersale img { width: 50%; }
+        #aftersale div p:nth-child(1) { font-size: 25px; }
+        #aftersale div p:nth-child(2) { color: #aaa }
     </style>
 </head>
 <body>
@@ -258,34 +283,40 @@
                 </div>
             </div>
         </div>
-        <div> <!-- 最外层div -->
-            <div> <!-- left  -->
-                <div> <!-- 第一行图片与文字  -->
-                    <div>
+        <div id="dec"> <!-- 最外层div -->
+            <div id="dec_left"> <!-- left  -->
+                <div class="atleft"> <!-- 第一行图片与文字  -->
+                    <div class="imgs">
                         <a href="">
                             <img src="images/decorate3.jpg" alt="">
                         </a>
                     </div>
                     <div>
-                        <p><a href="">山中花店的活动中 稀有种子如何获得？</a></p>
-                        <p>发布日期：2017-05-23</p>
+                        <br>
+                        <h2>山中花店的活动中 稀有种子如何获得？</h2>
+                        <br>
+                        <h3 style="color: #aaa">发布日期：2017-05-23</h3>
+                        <br>
                         <p>从一九四七年巴黎蒙田大街30号New Look的展出开始，Dior就成为高级女装的代名词, 继承了法国高级女装的传统，始终保持华丽的设计路线，做工精细，迎合上流社会成熟女性的审...</p>
                     </div>
                 </div>
-                <div>  <!-- 第二行图片与文字  -->
-                    <div>
+                <div class="atleft">  <!-- 第二行图片与文字  -->
+                    <div class="imgs">
                         <a href="">
                             <img src="images/decorate4.jpg" alt="">
                         </a>
                     </div>
                     <div>
-                        <p><a href="">山中花店的活动中 稀有种子如何获得？</a></p>
-                        <p>发布日期：2017-05-23</p>
+                        <br>
+                        <h2>山中花店的活动中 稀有种子如何获得？</h2>
+                        <br>
+                        <h3 style="color: #aaa">发布日期：2017-05-23</h3>
+                        <br>
                         <p>从一九四七年巴黎蒙田大街30号New Look的展出开始，Dior就成为高级女装的代名词, 继承了法国高级女装的传统，始终保持华丽的设计路线，做工精细，迎合上流社会成熟女性的审...</p>
                     </div>
                 </div>
             </div>
-            <div>  <!-- right  -->
+            <div id="dec_right">   <!-- right  -->
                 <img src="images/decorate2.jpg" alt="">
             </div>
         </div>
@@ -294,16 +325,41 @@
     <div id="aftersale">
         <div>
             <img src="images/serive1.png" alt="">
+            <div>
+                <p>满1000元全国包邮</p>
+                <p>全场订单满1000元全国包邮</p>
+            </div>
         </div>
         <div>
             <img src="images/serive2.png" alt="">
+            <div>
+                <p>下单送精美礼单</p>
+                <p>本店购买任意商品赠送精美礼品</p>
+            </div>
         </div>
         <div>
             <img src="images/serive3.png" alt="">
+            <div>
+                <p>贴心的售后服务</p>
+                <p>7X24小时售后随时为您服务</p>
+            </div>
         </div>
         <div>
             <img src="images/serive4.png" alt="">
+            <div>
+                <p>店铺优惠券</p>
+                <p>每日整点可领取限量优惠券</p>
+            </div>
         </div>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <img src="" alt="">
+                <p></p>
+                
+            </li>
+        </ul>
     </div>
 </div>
 </body>
