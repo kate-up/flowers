@@ -9,7 +9,7 @@
         *{margin:0;padding:0;}
         #container{
             width:100%;height:840px;
-            background-image:url(../img/login.jpg);
+            background-image:url(img/login.jpg);
             position: relative;
         }
         #container:before{
@@ -36,13 +36,13 @@
             margin-bottom:30px;
         }
         .phone>input,.upwd>input{
-            background-image: url(../img/pho.png);
+            background-image: url(img/pho.png);
             background-repeat: no-repeat;
             background-size: 35px;
             background-position: -3px 6px;
         }
         .upwd>input{ 
-            background-image: url(../img/mima.png);
+            background-image: url(img/mima.png);
             background-repeat: no-repeat;
             background-size: 30px;
             background-position: 1px 8px;
@@ -86,10 +86,10 @@
             <p>会员登录</p>
         </div> 
         <div class="phone">
-            <input type="text" placeholder="请输入手机号登录">
+            <input type="text" placeholder="请输入手机号" id="phone">
         </div>
         <div class="upwd">
-            <input type="password" placeholder="请输入密码" >
+            <input type="password" placeholder="请输入密码" id="upwd">
         </div>
         <div>
             <input type="checkbox" id="select">
@@ -97,11 +97,41 @@
             <a href="#"><span>忘记密码</span></a>
         </div>
         <div class="btn">
-           <input type="button" value="登录">
+           <input type="button" value="登录" onclick="login()">
         </div>
     </div>
 </div>
 <!-- 页脚 -->
 <div id="footer"></div>
+<!-- <script src="../js/login.js"></script> -->
+<script>
+
+function login(){
+    //接收的数据
+    var p=document.getElementById("phone");
+    var phone=p.value;
+    var pwd=document.getElementById("upwd");
+    var upwd=pwd.value;
+    //创建异步对象
+    var xhr=new XMLHttpRequest();
+    //创建监听，获取响应数据
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4&&xhr.status==200){
+            var result=xhr.responseText;
+            console.log(result);
+        }
+    };
+    //打开链接，创建请求
+    var url="http://127.0.0.1:8080/user_login/login";
+    xhr.open("post",url,true);
+    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    //发送请求
+    var formdata=`phone=${phone}&upwd=${upwd}`;
+    xhr.send(formdata);
+    
+
+}
+
+</script>
 </body>
 </html>
