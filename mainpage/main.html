@@ -7,6 +7,7 @@
     <title>mainpage</title>
     <style>
         * { margin: 0; padding: 0; }
+        body {width: 75%; margin: 0 auto;}
         .content {width: 100% }
         #carous {
             text-align: center;
@@ -126,23 +127,25 @@
         .top {  margin-bottom: 100px ; margin-top: 30px; }
         .bottom { margin: 30px ; }
         #dec { 
-            width: 100%; 
-            display: flex;  
+            width: 95%; 
+            display: flex; 
+            justify-content: space-around; 
             margin: 50px 30px;
         }
-        /* #dec_left { display: flex;  } */
-        #dec_right { width: 40% ; margin-right: 0;}
+        #dec_left { width: 1400px;  } 
+        #dec_right { width: 390px ;height: 441px; padding: 10px;}
         .atleft {
             display: flex;
             flex-wrap: wrap;
             border: 1px solid #aaa;
             padding: 10px;
             margin: 10px;
+            justify-content: space-around;
         }
         .imgs {
-            width: 50%;
+            width: 280px ; height: 200px;
         }
-        .word { width: 50% }
+        .word { width: 674px ; height: 200px; }
         #aftersale {
             display: flex;
             justify-content: space-around;
@@ -152,6 +155,13 @@
         #aftersale img { width: 50%; }
         #aftersale div p:nth-child(1) { font-size: 25px; }
         #aftersale div p:nth-child(2) { color: #aaa }
+        div#right {
+            width: 1000px ; height: 459px;
+        }
+        div#left img {
+            width: 1000px;  height: 495px;
+        }
+        /* div#todaysale { display: flex; flex-wrap: wrap; } */
     </style>
 </head>
 <body>
@@ -230,7 +240,6 @@
             </div>
             <div class="astyle"><a href="#">关于花语</a></div>
         </div>
-        <hr>
         <div id="sales_pro">
             <div id="left">
                 <img src="images/banner3.jpg" alt="">
