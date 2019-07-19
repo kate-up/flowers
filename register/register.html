@@ -22,21 +22,47 @@
     }
     /* 注册div */
     #register {
-        width: 600px; height: 800px;
+        width: 600px; height: 650px;
         background: rgba(255,255,255,0.6);
-        margin: 50px auto;
+        margin: 150px auto;
     }
     /* ul外包裹的div */
     .smbox {
-        width: 400px; height: 600px;
-        background-color: #ace;
+        width: 400px; height: 400px;
+        /* background-color: #cdf; */
         position: absolute;
-        margin: 50px 100px;
+        margin: 150px 100px;
     }
     /* ul下的样式 */
-    ul { list-style: none; }
+    ul { list-style: none; width: 90%; padding: 0; margin: 0 auto; }
     ul li div { display: inline-block }
-    
+    /* 提示信息 */
+    .empty { width: 30%; height: 10px; }
+    /* 验证失败之前透明度为零->隐藏 */
+    ul li:nth-child(2n) {
+        color: #f00;
+        opacity: 0;
+    }
+    .word { width: 30%; }
+    .btn { 
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto; 
+    }
+    /* 同意选中框行样式 */
+    .agree { 
+        text-align: center; 
+        color: #000;
+    }
+    #relate { 
+        zoom: 200%;                  /* input  checkbox 复选框大小修改 */
+        margin-bottom: 0;
+        transform: translateY(3px)   /* 将复选框微调至合适位置 */
+    }
+    /* button按钮边框圆角 */
+    button { 
+        border-radius: 6px;
+    }
     </style>
 </head>
 <body>
@@ -44,17 +70,18 @@
         <div id="register">
             <div class="smbox">
                 <ul>
-                    <li><div>电话号码：</div><input type="text" placeholder="请输入电话号码"></li>
-                    <li>手机号码格式不正确</li>
-                    <li><div>邮&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp箱：</div><input type="text" placeholder="请输入邮箱"></li>
-                    <li>邮箱格式不正确</li>
-                    <li><div>密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码：</div><input type="text" placeholder="请输入4~8位密码"></li>
-                    <li>密码不能为空</li>
-                    <li><div>确认密码：<div><input type="text" placeholder="请再次输入相同的密码"></li>
-                    <li>两次密码不一致</li>
+                    <li><div class="word">电话号码：</div><input type="text" placeholder="请输入电话号码"></li>
+                    <li><div class="empty"></div>手机号码格式不正确</li>
+                    <li><div class="word">邮&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp箱：</div><input type="text" placeholder="请输入邮箱"></li>
+                    <li><div class="empty"></div>邮箱格式不正确</li>
+                    <li><div class="word">密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码：</div><input type="text" placeholder="请输入4~8位密码"></li>
+                    <li><div class="empty"></div>密码不能为空</li>
+                    <li><div class="word">确认密码：</div><input type="text" placeholder="请再次输入密码"></li>
+                    <li><div class="empty"></div>两次密码不一致</li>
                 </ul>
-                <div><input type="checkbox">我同意《用户手册》和《保密条款》</div>
-                <div><button>注册</button><button><a href="">已经有账号了？请登陆</a></button></div>
+                <div class="agree"><input type="checkbox" id="relate"><label for="relate">我同意《用户手册》和《保密条款》</label></div>
+                <br>
+                <div class="btn"><button>注册</button><button><a href="#">已经有账号了？请登陆</a></button></div>
             </div>
         </div>
     </div>
